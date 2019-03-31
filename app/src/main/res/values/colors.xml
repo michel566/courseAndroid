@@ -6,6 +6,8 @@
 
     <color name="WhatsApp_colorPrimaryDark">#0a5048</color>
     <color name="WhatsApp_colorPrimary">#0b6156</color>
+    <color name="WhatsApp_colorAccent">#BBBBBB</color>
+
     <color name="WhatApp_textColor">#FFFFFF</color>
 
 </resources>
