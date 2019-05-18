@@ -2,6 +2,7 @@ package cursoandroid.whatsappandroid.com.whatsapp.activity;
 
 import android.Manifest;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -10,6 +11,7 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import cursoandroid.whatsappandroid.com.whatsapp.R;
 import cursoandroid.whatsappandroid.com.whatsapp.activity.utils.Util;
@@ -65,13 +67,19 @@ public class LoginActivity extends AppCompatActivity {
                 preferencias.salvarUsuarioPreferencias(nomeUsuario, telefoneSemFormatacao, token);
 
                 //Envio do SMS (+5521995579636)
-
                 String mensagemEnvio = "WhatApp Código de Confirmação: " + token;
 
-                //Somente para teste com emulador, descomente essa linha abaixo:
+                //Somente para teste com emulador, descomente a linha abaixo:
                 telefoneSemFormatacao = "5554";
                 boolean enviadoSMS = enviaSMS("+" + telefoneSemFormatacao, token);
 
+                if (enviadoSMS){
+                    Intent intent = new Intent(LoginActivity.this, ValidadorActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Problema ao enviar o SMS, tente novamente :( ", Toast.LENGTH_LONG).show();
+                }
                 /*
                 HashMap<String, String> usuario = preferencias.getDadosUsuario();
                 Log.i("TOKEN", "T:" + usuario.get("token"));
