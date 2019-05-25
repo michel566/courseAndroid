@@ -5,6 +5,7 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="WhatsApp_colorPrimaryDark">#0a5048</color>
+    <color name="WhatsApp_colorPrimaryDarker">#094040</color>
     <color name="WhatsApp_colorPrimary">#0b6156</color>
     <color name="WhatApp_textColor">#FFFFFF</color>
 

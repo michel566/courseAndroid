@@ -8,12 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="WhatsAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
+    <style name="WhatsAppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/WhatsApp_colorPrimary</item>
         <item name="colorPrimaryDark">@color/WhatsApp_colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:itemBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/WhatsApp_colorPrimaryDarker</item>
+        <item name="colorControlHighlight">@color/WhatsApp_colorPrimaryDark</item>
+        <item name="android:textColor">@color/WhatApp_textColor</item>
     </style>
 
     <style name="WhatsAppTheme.NoActionBar">

@@ -5,4 +5,9 @@
     <string name="texto_cadastre">Não tem conta? Cadastre-se</string>
     <string name="title_activity_cadastro_usuario">CadastroUsuarioActivity</string>
 
+    <string name="item_configuracao">Configurações</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_pesquisar">Pesquisar</string>
+    <string name="item_adicionar">Adicionar</string>
+
 </resources>
