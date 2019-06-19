@@ -1,5 +1,6 @@
 package cursoandroid.whatsappandroid.com.whatsapp.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -15,10 +16,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
-import com.google.firebase.auth.FirebaseUser;
 
 import cursoandroid.whatsappandroid.com.whatsapp.R;
 import cursoandroid.whatsappandroid.com.whatsapp.config.ConfiguracaoFirebase;
+import cursoandroid.whatsappandroid.com.whatsapp.helper.Base64Custom;
 import cursoandroid.whatsappandroid.com.whatsapp.model.Usuario;
 
 public class CadastroUsuarioActivity extends AppCompatActivity {
@@ -60,16 +61,16 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                 CadastroUsuarioActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+
                         if (task.isSuccessful()) {
                             if (task.getResult().getUser() != null) {
-                                FirebaseUser usuarioFirebase = task.getResult().getUser();
-                                usuario.setId(usuarioFirebase.getUid());
+                                String identificadorUsuario = Base64Custom.codificarBase64(usuario.getEmail());
+                                usuario.setId(identificadorUsuario);
                             }
                             usuario.salvar();
                             Toast.makeText(CadastroUsuarioActivity.this, "Sucesso ao cadastrar usuário", Toast.LENGTH_LONG).show();
+                            abrirLoginUsuario();
 
-                            autenticacao.signOut();
-                            finish();
                         } else {
                             String erroExcecao = "";
 
@@ -92,5 +93,10 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
         );
     }
 
+    private void abrirLoginUsuario() {
+        Intent intent = new Intent(CadastroUsuarioActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 }
