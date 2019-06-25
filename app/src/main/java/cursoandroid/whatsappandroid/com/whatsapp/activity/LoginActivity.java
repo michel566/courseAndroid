@@ -1,5 +1,6 @@
 package cursoandroid.whatsappandroid.com.whatsapp.activity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -27,10 +28,20 @@ public class LoginActivity extends AppCompatActivity {
 
     private FirebaseAuth autenticacao;
 
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import cursoandroid.whatsappandroid.com.whatsapp.R;
+
+public class LoginActivity extends AppCompatActivity {
+
+>>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+<<<<<<< HEAD
 
         verificarUsuarioLogado();
 
@@ -92,4 +103,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+=======
+    }
+>>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 }

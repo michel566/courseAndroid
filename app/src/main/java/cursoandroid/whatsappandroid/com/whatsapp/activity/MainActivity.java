@@ -1,5 +1,6 @@
 package cursoandroid.whatsappandroid.com.whatsapp.activity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -24,11 +25,25 @@ public class MainActivity extends AppCompatActivity {
 
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import cursoandroid.whatsappandroid.com.whatsapp.R;
+
+public class MainActivity extends AppCompatActivity {
+
+    private DatabaseReference referenciaFirebase = FirebaseDatabase.getInstance().getReference();
+>>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         usuarioAutenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
 
         toolbar = findViewById(R.id.toolbar);
@@ -80,4 +95,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+=======
+
+        referenciaFirebase.child("pontos").setValue(100);
+    }
+>>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 }

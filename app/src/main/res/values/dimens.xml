@@ -2,5 +2,8 @@
 <resources>
     <dimen name="largura_logo">200dp</dimen>
     <dimen name="altura_logo">163dp</dimen>
+<<<<<<< HEAD
     <dimen name="fab_margin">16dp</dimen>
+=======
+>>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 </resources>

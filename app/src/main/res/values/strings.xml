@@ -2,6 +2,7 @@
     <string name="app_name">WhatsApp</string>
     <string name="botao_cadastrar">Cadastrar</string>
     <string name="botao_validar">Validar</string>
+<<<<<<< HEAD
     <string name="texto_cadastre">Não tem conta? Cadastre-se</string>
     <string name="title_activity_cadastro_usuario">CadastroUsuarioActivity</string>
 
@@ -12,5 +13,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+>>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 
 </resources>
