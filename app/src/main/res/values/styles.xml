@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="WhatsAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/WhatsApp_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/WhatsApp_colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:itemBackground">@android:color/white</item>
+    </style>
+
+    <style name="botaoPadrao" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/WhatsApp_colorPrimaryDarker</item>
+        <item name="colorControlHighlight">@color/WhatsApp_colorPrimaryDark</item>
+        <item name="android:textColor">@color/WhatApp_textColor</item>
+    </style>
+
+    <style name="WhatsAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WhatsAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="WhatsAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

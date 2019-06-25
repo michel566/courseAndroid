@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="WhatsApp_colorPrimaryDark">#0a5048</color>
+    <color name="WhatsApp_colorPrimaryDarker">#094040</color>
+    <color name="WhatsApp_colorPrimary">#0b6156</color>
+    <color name="WhatsApp_colorAccent">#3d958a</color>
+    <color name="WhatApp_textColor">#FFFFFF</color>
+
+</resources>
