@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center_horizontal"
-=======
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/WhatsApp_colorPrimary"
@@ -19,24 +13,17 @@
         android:id="@+id/iv_login_logo"
         android:layout_width="@dimen/largura_logo"
         android:layout_height="@dimen/altura_logo"
-<<<<<<< HEAD
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-=======
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <EditText
-<<<<<<< HEAD
         android:id="@+id/ed_login_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -48,24 +35,11 @@
         android:ems="10"
         android:hint="Digite seu e-mail"
         android:inputType="textEmailAddress"
-=======
-        android:id="@+id/ed_login_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="Digite seu nome"
-        android:inputType="textPersonName"
-        android:textColor="@color/WhatApp_textColor"
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_login_logo" />
 
     <EditText
-<<<<<<< HEAD
         android:id="@+id/ed_login_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -111,60 +85,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botao_logar" />
-=======
-        android:id="@+id/ed_login_ddi"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="3"
-        android:hint="+55"
-        android:textColor="@color/WhatApp_textColor"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_login_name" />
-
-    <EditText
-        android:id="@+id/ed_login_ddd"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:ems="2"
-        android:hint="21"
-        android:textColor="@color/WhatApp_textColor"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/ed_login_ddi"
-        app:layout_constraintTop_toBottomOf="@+id/ed_login_name" />
-
-    <EditText
-        android:id="@+id/ed_login_phone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="9"
-        android:hint="968259010"
-        android:textColor="@color/WhatApp_textColor"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ed_login_ddd"
-        app:layout_constraintTop_toBottomOf="@+id/ed_login_name" />
-
-    <Button
-        android:id="@+id/bt_login_signUp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/WhatsApp_colorPrimaryDark"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/botao_cadastrar"
-        android:textColor="@color/WhatApp_textColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ed_login_phone" />
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 
 </android.support.constraint.ConstraintLayout>
