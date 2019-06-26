@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".fragment.ContatosFragment">
 
-    <TextView
-        android:id="@+id/tv_Contatos"
+    <ListView
+        android:id="@+id/lv_contatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Contatos"
-        android:textSize="20sp" />
+        android:layout_gravity="center_horizontal"
+        android:divider="@color/WhatApp_dividerColor"
+        android:dividerHeight="1dp"/>
 
 </FrameLayout>
