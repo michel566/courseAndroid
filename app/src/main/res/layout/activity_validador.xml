@@ -57,6 +57,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        
         android:hint="Digite o Código"
         android:textColor="@color/WhatApp_textColor"
         android:ems="10"
