@@ -1,0 +1,44 @@
+1 - Abre o terminal BASH na pasta do projeto
+2 - verifique qual a branch você se encontra, caso esteja no master e deseja iniciar uma nova tarefa use o comando:
+	git checkout -b nome_da_branch
+
+Dessa forma você irá trabalhar na branch informada.
+
+3 - Depois de terminar a tarefa você deve seguir os seguintes procedimentos:
+
+a-) na branch da tarefa, você deve usar o comando: 
+	git status
+
+Dessa forma você irá verificar todas as alterações que precisam ser adicionadas
+
+b-) para adicionar todos os arquivos e alterações use o comando:
+	git add .
+
+Dessa forma irá adicionar ao pacote de alterações a serem comitadas.
+
+c-) para comitar tudo que foi adicionado e dar uma descrição do feito você deve usar o comando:
+	git commit -am "nome_da_branch: Aqui você descreve tudo que foi feito"
+
+Como uma boa prática, coloque o nome da sua branch no inicio do texto e depois a descrição da tarefa, dessa forma, fica mais facil identificar sua branch na plataforma.
+
+d-) para enviar o commmit, use o comando:
+	git push origin nome_da_branch
+
+Dessa forma irá enviar o seu trabalho ao repositório online git
+
+
+4 - Acesse o seu projeto pelo navegador na plataforma git: 
+
+	https://github.com/michel566/courseAndroid 
+
+por exemplo e vai informar sobre a ultima branch atualizada, clique no botão verde, e em seguir, você pode adicionar o comentário para depois dar o pull request. Caso solicitar o merge, você pode dar o merge e depois disso é necessário você retornar ao terminal git bash:
+
+5 - Retorne a branch master:
+	git checkout master
+
+6 - Atualize sua branch:
+	git pull
+
+	Dessa forma, você irá aceitar quaisquer alterações feitas no pull request na sua branch master.
+	
+
