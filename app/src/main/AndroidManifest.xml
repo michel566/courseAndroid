@@ -21,7 +21,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cursoandroid.whatsappandroid.com.whatsapp.activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.ValidadorActivity"></activity>
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
