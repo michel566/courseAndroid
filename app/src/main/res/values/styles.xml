@@ -8,7 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-<<<<<<< HEAD
     <style name="WhatsAppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/WhatsApp_colorPrimary</item>
         <item name="colorPrimaryDark">@color/WhatsApp_colorPrimaryDark</item>
@@ -32,14 +31,4 @@
 
     <style name="WhatsAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-=======
-    <style name="WhatsAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="colorPrimary">@color/WhatsApp_colorPrimary</item>
-        <item name="colorPrimaryDark">@color/WhatsApp_colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
 </resources>

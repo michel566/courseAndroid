@@ -2,12 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cursoandroid.whatsappandroid.com.whatsapp">
 
-<<<<<<< HEAD
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
 
-=======
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/WhatsAppTheme">
-<<<<<<< HEAD
         <activity
             android:name=".activity.CadastroUsuarioActivity"
             android:label="@string/title_activity_cadastro_usuario"
@@ -25,9 +21,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cursoandroid.whatsappandroid.com.whatsapp.activity.MainActivity" />
         </activity>
-=======
         <activity android:name=".activity.ValidadorActivity"></activity>
->>>>>>> 9f97e297f536493c3b9f291c2ff5d1a8161ed908
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
