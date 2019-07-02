@@ -14,7 +14,7 @@ Dessa forma você irá verificar todas as alterações que precisam ser adicionadas
 b-) para adicionar todos os arquivos e alterações use o comando:
 	git add .
 
-Dessa forma irá adicionar ao pacote de alterações a serem comitadas.
+Dessa forma irá adicionar ao pacote de alterações a serem comitadas. De um outro git status caso queira visualizar tudo que for adicionado que estará em verde.
 
 c-) para comitar tudo que foi adicionado e dar uma descrição do feito você deve usar o comando:
 	git commit -am "nome_da_branch: Aqui você descreve tudo que foi feito"

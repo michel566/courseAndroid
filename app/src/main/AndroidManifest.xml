@@ -12,6 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/WhatsAppTheme">
+
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".activity.CadastroUsuarioActivity"
             android:label="@string/title_activity_cadastro_usuario"
@@ -21,13 +31,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cursoandroid.whatsappandroid.com.whatsapp.activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".activity.ConversaActivity"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cursoandroid.whatsappandroid.com.whatsapp.activity.MainActivity" />
         </activity>
     </application>
 
