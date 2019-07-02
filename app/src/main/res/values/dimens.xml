@@ -3,4 +3,7 @@
     <dimen name="largura_logo">200dp</dimen>
     <dimen name="altura_logo">163dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="shape_radiusButton">22dp</dimen>
+    <dimen name="shape_radiusMessage">12dp</dimen>
+
 </resources>
