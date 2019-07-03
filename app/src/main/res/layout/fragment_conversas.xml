@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".fragment.ConversasFragment">
 
-    <TextView
-        android:id="@+id/tv_Conversas"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/lv_conversas"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Conversas"
-        android:textSize="20sp" />
+        android:layout_gravity="center_horizontal"
+        android:divider="@color/WhatApp_dividerColor"
+        android:dividerHeight="1dp"/>
 </FrameLayout>

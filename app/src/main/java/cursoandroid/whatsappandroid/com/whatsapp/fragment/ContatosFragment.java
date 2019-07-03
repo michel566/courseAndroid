@@ -56,7 +56,7 @@ public class ContatosFragment extends Fragment {
         listView = view.findViewById(R.id.lv_contatos);
       /*  adapter = new ArrayAdapter(
                 getActivity(),
-                R.layout.lista_contato,
+                R.layout.listas,
                 contatos
         );
       */

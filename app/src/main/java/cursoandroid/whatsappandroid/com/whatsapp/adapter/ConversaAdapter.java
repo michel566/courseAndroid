@@ -10,39 +10,39 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cursoandroid.whatsappandroid.com.whatsapp.R;
-import cursoandroid.whatsappandroid.com.whatsapp.model.Contato;
+import cursoandroid.whatsappandroid.com.whatsapp.model.Conversa;
 
-public class ContatoAdapter extends ArrayAdapter<Contato> {
+public class ConversaAdapter extends ArrayAdapter<Conversa> {
 
-    private ArrayList<Contato> contatos;
+    private ArrayList<Conversa> conversas;
     private Context context;
 
-    public ContatoAdapter(Context c, ArrayList<Contato> objects) {
+    public ConversaAdapter(Context c, ArrayList<Conversa> objects) {
         super(c, 0, objects);
-        this.contatos = objects;
         this.context = c;
+        this.conversas = objects;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = null;
 
-        //Verifica se a lista está vazia
-        if (contatos != null) {
+        //Verifica se a lista está preenchida
+        if(conversas != null){
+
             // inicializar objeto para montagem da view
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
 
-            //Montar a view a partir do xml
+            //Monta view a partir do xml
             view = inflater.inflate(R.layout.listas, parent, false);
 
-            //recupera elemento para exibicao
+            //Recupera elemento para exibição
+            TextView nome = view.findViewById(R.id.tv_titulo);
+            TextView ultimaMensagem = view.findViewById(R.id.tv_subtitulo);
 
-            TextView nomeContato = view.findViewById(R.id.tv_titulo);
-            TextView emailContato = view.findViewById(R.id.tv_subtitulo);
-
-            Contato contato = contatos.get(position);
-            nomeContato.setText(contato.getNome());
-            emailContato.setText(contato.getEmail());
+            Conversa conversa = conversas.get(position);
+            nome.setText(conversa.getNome());
+            ultimaMensagem.setText(conversa.getMensagem());
         }
 
         return view;
