@@ -68,10 +68,11 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
                                 String identificadorUsuario = Base64Custom.codificarBase64(usuario.getEmail());
                                 usuario.setId(identificadorUsuario);
                                 usuario.salvar();
+
                                 Toast.makeText(CadastroUsuarioActivity.this, "Sucesso ao cadastrar usuário", Toast.LENGTH_LONG).show();
 
                                 Preferencias preferencias = new Preferencias(CadastroUsuarioActivity.this);
-                                preferencias.salvarDados(identificadorUsuario);
+                                preferencias.salvarDados(identificadorUsuario, usuario.getNome());
 
                                 abrirLoginUsuario();
                             }

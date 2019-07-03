@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_nome"
+        android:id="@+id/tv_titulo"
         android:text="Mariana Silva"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,8 +18,8 @@
     </TextView>
 
     <TextView
-        android:id="@+id/tv_email"
-        android:text="mariana.silva@gmail.com"
+        android:id="@+id/tv_subtitulo"
+        android:text="subtitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
