@@ -1,37 +1,37 @@
 1 - Abre o terminal BASH na pasta do projeto
-2 - verifique qual a branch você se encontra, caso esteja no master e deseja iniciar uma nova tarefa use o comando:
+2 - verifique qual a branch vocÃª se encontra, caso esteja no master e deseja iniciar uma nova tarefa use o comando:
 	git checkout -b nome_da_branch
 
-Dessa forma você irá trabalhar na branch informada.
+Dessa forma vocÃª irÃ¡ trabalhar na branch informada.
 
-3 - Depois de terminar a tarefa você deve seguir os seguintes procedimentos:
+3 - Depois de terminar a tarefa vocÃª deve seguir os seguintes procedimentos:
 
-a-) na branch da tarefa, você deve usar o comando: 
+a-) na branch da tarefa, vocÃª deve usar o comando: 
 	git status
 
-Dessa forma você irá verificar todas as alterações que precisam ser adicionadas
+Dessa forma vocÃª irÃ¡ verificar todas as alteraÃ§Ãµes que precisam ser adicionadas
 
-b-) para adicionar todos os arquivos e alterações use o comando:
+b-) para adicionar todos os arquivos e alteraÃ§Ãµes use o comando:
 	git add .
 
-Dessa forma irá adicionar ao pacote de alterações a serem comitadas. De um outro git status caso queira visualizar tudo que for adicionado que estará em verde.
+Dessa forma irÃ¡ adicionar ao pacote de alteraÃ§Ãµes a serem comitadas. De um outro git status caso queira visualizar tudo que for adicionado que estarÃ¡ em verde.
 
-c-) para comitar tudo que foi adicionado e dar uma descrição do feito você deve usar o comando:
-	git commit -am "nome_da_branch: Aqui você descreve tudo que foi feito"
+c-) para comitar tudo que foi adicionado e dar uma descriÃ§Ã£o do feito vocÃª deve usar o comando:
+	git commit -am "nome_da_branch: Aqui vocÃª descreve tudo que foi feito"
 
-Como uma boa prática, coloque o nome da sua branch no inicio do texto e depois a descrição da tarefa, dessa forma, fica mais facil identificar sua branch na plataforma.
+Como uma boa prÃ¡tica, coloque o nome da sua branch no inicio do texto e depois a descriÃ§Ã£o da tarefa, dessa forma, fica mais facil identificar sua branch na plataforma.
 
 d-) para enviar o commmit, use o comando:
 	git push origin nome_da_branch
 
-Dessa forma irá enviar o seu trabalho ao repositório online git
+Dessa forma irÃ¡ enviar o seu trabalho ao repositÃ³rio online git
 
 
 4 - Acesse o seu projeto pelo navegador na plataforma git: 
 
 	https://github.com/michel566/courseAndroid 
 
-por exemplo e vai informar sobre a ultima branch atualizada, clique no botão verde, e em seguir, você pode adicionar o comentário para depois dar o pull request. Caso solicitar o merge, você pode dar o merge e depois disso é necessário você retornar ao terminal git bash:
+por exemplo e vai informar sobre a ultima branch atualizada, clique no botÃ£o verde, e em seguir, vocÃª pode adicionar o comentÃ¡rio para depois dar o pull request. Caso solicitar o merge, vocÃª pode dar o merge e depois disso Ã© necessÃ¡rio vocÃª retornar ao terminal git bash:
 
 5 - Retorne a branch master:
 	git checkout master
@@ -39,6 +39,16 @@ por exemplo e vai informar sobre a ultima branch atualizada, clique no botão ver
 6 - Atualize sua branch:
 	git pull
 
-	Dessa forma, você irá aceitar quaisquer alterações feitas no pull request na sua branch master.
+	Dessa forma, vocÃª irÃ¡ aceitar quaisquer alteraÃ§Ãµes feitas no pull request na sua branch master.
 	
+	
+	
+	---------------------------------- DEBUG APP VIA BLUETOOTH:
+	
+1. Connect the device via USB.
+2. Open a terminal, and run adb tcpip 4455 .
+3. Now you can unplug the cable, and pair/connect to the host computer via bluetooth
+4. On Android, start tethering via Bluetooth
+5. On the pc, on the terminal, run adb connect 192.168.44.1:4455 . It should say connected to 192.168.44.1:4455
+6. Start Android Studio and now the device will be available for launch
 
