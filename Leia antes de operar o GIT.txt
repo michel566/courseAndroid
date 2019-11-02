@@ -52,3 +52,38 @@ por exemplo e vai informar sobre a ultima branch atualizada, clique no botão ve
 5. On the pc, on the terminal, run adb connect 192.168.44.1:4455 . It should say connected to 192.168.44.1:4455
 6. Start Android Studio and now the device will be available for launch
 
+
+
+   ----------------------------------------HOW MAKE YOURS FORM CONSTRAINT LAYOUT RESPONSIBLE?
+   
+   
+1. Select all of its components to align in the layout and select Expand Horizontal / Vertical
+2. Next, you need to constrain each component with its neighbor, pointing to the previous one and its later see this example:
+
+ <TextView
+        android:id="@+id/tv_pass_dia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pass_horario"
+        app:layout_constraintStart_toEndOf="@+id/tv_pass_order"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_pass_horario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pass_codValidador"
+        app:layout_constraintStart_toEndOf="@+id/tv_pass_dia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pass_codValidador"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pass_valor"
+        app:layout_constraintStart_toEndOf="@+id/tv_pass_horario"
+        app:layout_constraintTop_toTopOf="parent" />
+	
+3. You see, with you need align each component in opposite position with your parent, this case, your parent is an vertical of each component, so, you need align topToTopOf and bottomToBottomOf respectivily.
+
+4. The First component and Last, you appoint to parent components im same position constraint you to left in case first, and right in case the last.
+
+5. If you using a vertical layout, invert all positions in descr.
+
